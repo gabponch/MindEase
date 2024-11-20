@@ -66,7 +66,7 @@ header {
 
     .auth-buttons .login,
     .auth-buttons .start {
-        padding: 10px 20px;
+        padding: 8px 35px;
         border: none;
         cursor: pointer;
         border-radius: 25px;
@@ -75,7 +75,7 @@ header {
     .auth-buttons .login {
         background-color: #fff;
         color: #364C84;
-        border: 1px solid #ddd;
+        border: 1px solid #F1642E;
     }
 
     .auth-buttons .start {
@@ -86,7 +86,7 @@ header {
     .destaque {
         background-color: #E1EBAD;
         text-align: center;
-        padding: 50px 20px;
+        padding: 140px 20px;
         color: #364C84;
         clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%);
         }
@@ -100,7 +100,7 @@ header {
     .plan-button {
         background-color: #F1642E;
         color: #fff;
-        padding: 10px 20px;
+        padding: 14px 60px;
         border: none;
         cursor: pointer;
         border-radius: 25px;
@@ -112,13 +112,14 @@ header {
 
     .about-us h2 {
         color: #F1642E;
+        font-size: 34px;
+        margin: 0px;
     }
 
     .about-us,
-    .how-it-works,
     .advantages,
     .for-psychologists {
-        padding: 50px 20px;
+        padding: 150px 80px;
         text-align: rigth;
     }
 
@@ -128,15 +129,32 @@ header {
 
     .how-it-works h2 {
         color: #F1642E;
+        font-size: 34px;
     }
+
+
+    .about-us p{
+        margin: 0px;
+    }
+
+    .how-it-works {
+        padding: 20px 80px 50px;
+        text-align: rigth;
+    }
+
+    .how-it-works h2{
+        font-size: 34px;
+    }
+
 
     .how-it-works ol,
     .advantages ul,
     .psychologist-advantages ul {
+        list-style: none;
         text-align: left;
         display: inline-block;
         margin: 0 auto;
-        padding-left: 20px;
+        padding-left: 0px;
         color: #364C84;
     }
 

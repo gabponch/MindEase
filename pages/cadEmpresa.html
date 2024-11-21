@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadEmpresa.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
+            <a href="./home.html"><span>MindEase</span></a>
+        </nav>
+    </header>
+
+    <main>
+       <section class="começar">
+            <h2>Vamos Começar!</h2>
+            <p>Solicite sua demonstração</p>
+       </section>
+
+       <section id="empresa-login" class="login-section">
+        <form action="processar-cadastro.php" method="POST" class="empresa-form">
+            <div class="form-row">
+                <input type="text" name="razao_social" placeholder="Razão Social" required>
+                <input type="text" name="nome_empresa" placeholder="Nome da Empresa" required>
+            </div>
+            <div class="form-row">
+                <input type="email" name="email_corporativo" placeholder="E-mail Corporativo" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="cnpj" placeholder="CNPJ" required>
+                <input type="number" name="colaboradores" placeholder="Número de Colaboradores" required>
+            </div>
+            <div class="form-row">
+                <input type="text" name="endereco" placeholder="Endereço" required>
+                <div class="contact-group">
+                    <span>+55</span>
+                    <input type="tel" name="numero" placeholder="Número" required>
+                </div>
+            </div>
+            <button type="submit" class="submit-button">Cadastrar Empresa</button>
+        </form>
+    </section>
+    
+    
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

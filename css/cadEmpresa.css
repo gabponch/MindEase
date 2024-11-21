@@ -1,0 +1,63 @@
+.login-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    text-align: center;
+    color: #364C84;
+    margin-bottom: 20px;
+}
+
+.empresa-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    background-color: #FDF8E2;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-row input::placeholder {
+    color: #00254E;
+}
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.contact-group span {
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+}
+
+.contact-group input {
+    flex: 1;
+}
+
+.submit-button {
+    padding: 12px;
+    background-color: #F1642E;
+    color: #fff;
+}

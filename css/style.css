@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -56,6 +60,15 @@ header {
     nav ul li a {
         text-decoration: none;
         color: #364C84;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #FFA07A;
+    }
+
+    nav ul li a:active {
+        color: #F1642E;
     }
 
     .auth-buttons {

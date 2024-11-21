@@ -23,8 +23,12 @@
     </header>
 
     <main>
+
+        <img class="nuvem1" src="../assets/nuvens.png" alt="">
+        <img class="nuvem2" src="../assets/nuvens.png" alt="">
+        
        <section class="começar">
-            <h2>Vamos Começar!</h2>
+            <h1>Vamos Começar!</h1>
             <p>Solicite sua demonstração</p>
        </section>
 
@@ -39,7 +43,7 @@
             </div>
             <div class="form-row">
                 <input type="text" name="cnpj" placeholder="CNPJ" required>
-                <input type="number" name="colaboradores" placeholder="Número de Colaboradores" required>
+                <input type="number" name="colaboradores" placeholder="Número de Colaboradores" min="1" step="1" required>
             </div>
             <div class="form-row">
                 <input type="text" name="endereco" placeholder="Endereço" required>
@@ -51,7 +55,6 @@
             <button type="submit" class="submit-button">Cadastrar Empresa</button>
         </form>
     </section>
-    
     
     </main>
     <script src="js/scripts.js"></script>

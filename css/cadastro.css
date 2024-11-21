@@ -1,0 +1,66 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral da página */
+body {
+    font-family: 'Jost', sans-serif;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    margin-bottom: 40px;
+}
+
+/* Estilo das chamadas para ação */
+.cta-container {
+    display: flex;
+    gap: 30px;
+    flex-direction: row; /* Alinha os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões */
+    align-items: center; /* Alinha verticalmente os botões */
+}
+
+.cta {
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #F1642E;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #F1A22E;
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: 40px;
+    font-size: 14px;
+    color: #00254E;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .cta-container {
+        gap: 20px;
+    }
+
+    .cta-button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}

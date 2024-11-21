@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadPsicologo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
+            <a href="./home.html"><span>MindEase</span></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="preencha">
+            <h1>Preencha seus dados</h1>
+            <p>e junte-se a nós</p>
+       </section>
+
+        <section id="psicologo-cadastro" class="login-section">
+            <form action="processar-cadastro.php" method="POST" class="psicologo-form">
+                <!-- Primeira linha -->
+                <div class="form-row">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                </div>
+                <!-- Segunda linha -->
+                <div class="form-row">
+                    <input type="text" name="crp" placeholder="CRP" required>
+                    <div class="contact-group">
+                        <span>+55</span>
+                        <input type="tel" name="numero" placeholder="Número" required>
+                    </div>
+                </div>
+                <!-- Terceira linha -->
+                <div class="form-row">
+                    <input type="text" name="nome_completo" placeholder="Nome completo" required>
+                </div>
+                <!-- Quarta linha -->
+                <div class="form-row">
+                    <input type="text" name="especialidade" placeholder="Especialidade" required>
+                    <input type="text" name="abordagem" placeholder="Abordagem" required>
+                </div>
+                <button type="submit" class="submit-button">Cadastrar Psicólogo</button>
+            </form>
+        </section>
+        
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

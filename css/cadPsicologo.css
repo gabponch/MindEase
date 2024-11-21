@@ -1,0 +1,85 @@
+/* Estilos gerais */
+.preencha{
+    text-align: center;
+    color: #364C84;
+    margin-top: 60px ;
+}
+
+.preencha h1, p{
+    margin:0px;
+    font-size: 1.6rem;
+}
+
+.login-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.login-section h2 {
+    text-align: center;
+    color: #364C84;
+    margin-bottom: 20px;
+}
+
+.psicologo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 15px;
+    background-color: #FDF8E2;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-row input::placeholder {
+    color: #00254E;
+}
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-group span {
+    background-color: #FDF8E2;
+    padding: 15px;
+    border-radius: 8px;
+    color: #00254E;
+    white-space: nowrap;
+}
+
+.contact-group input {
+    flex: 1;
+}
+
+.form-row input:focus,
+.contact-group input:focus {
+    border: 2px solid #F1642E;
+    outline: none;
+}
+
+.submit-button {
+    padding: 20px;
+    background-color: #F1642E;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}

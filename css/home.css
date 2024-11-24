@@ -4,7 +4,7 @@ body {
     padding: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -60,15 +60,6 @@ header {
     nav ul li a {
         text-decoration: none;
         color: #364C84;
-        transition: color 0.3s ease;
-    }
-
-    nav ul li a:hover {
-        color: #FFA07A;
-    }
-
-    nav ul li a:active {
-        color: #F1642E;
     }
 
     .auth-buttons {
@@ -79,7 +70,7 @@ header {
 
     .auth-buttons .login,
     .auth-buttons .start {
-        padding: 8px 35px;
+        padding: 10px 20px;
         border: none;
         cursor: pointer;
         border-radius: 25px;
@@ -89,6 +80,7 @@ header {
         background-color: #fff;
         color: #364C84;
         border: 1px solid #F1642E;
+     
     }
 
     .auth-buttons .start {
@@ -99,9 +91,9 @@ header {
     .destaque {
         background-color: #E1EBAD;
         text-align: center;
-        padding: 140px 20px;
+        padding: 50px 20px;
         color: #364C84;
-        clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%);
+        /* clip-path: polygon() pra dar forma ao destaque*/
         }
 
     .info {
@@ -113,7 +105,7 @@ header {
     .plan-button {
         background-color: #F1642E;
         color: #fff;
-        padding: 14px 60px;
+        padding: 10px 20px;
         border: none;
         cursor: pointer;
         border-radius: 25px;
@@ -125,14 +117,13 @@ header {
 
     .about-us h2 {
         color: #F1642E;
-        font-size: 34px;
-        margin: 0px;
     }
 
     .about-us,
+    .how-it-works,
     .advantages,
     .for-psychologists {
-        padding: 150px 80px;
+        padding: 50px 20px;
         text-align: rigth;
     }
 
@@ -142,32 +133,15 @@ header {
 
     .how-it-works h2 {
         color: #F1642E;
-        font-size: 34px;
     }
-
-
-    .about-us p{
-        margin: 0px;
-    }
-
-    .how-it-works {
-        padding: 20px 80px 50px;
-        text-align: rigth;
-    }
-
-    .how-it-works h2{
-        font-size: 34px;
-    }
-
 
     .how-it-works ol,
     .advantages ul,
     .psychologist-advantages ul {
-        list-style: none;
         text-align: left;
         display: inline-block;
         margin: 0 auto;
-        padding-left: 0px;
+        padding-left: 20px;
         color: #364C84;
     }
 

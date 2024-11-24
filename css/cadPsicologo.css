@@ -1,12 +1,15 @@
-/* Estilos gerais */
-.preencha{
-    text-align: center;
-    color: #364C84;
-    margin-top: 60px ;
+*{
+    font-family: 'Jost', sans-serif;
 }
 
-.preencha h1, p{
-    margin:0px;
+.preencha {
+    text-align: center;
+    color: #364C84;
+    margin-top: 60px;
+}
+
+.preencha h1, p {
+    margin: 0px;
     font-size: 1.6rem;
 }
 
@@ -36,7 +39,8 @@
     justify-content: space-between;
 }
 
-.form-row input {
+.form-row input,
+.form-row select {
     flex: 1;
     padding: 15px;
     background-color: #FDF8E2;
@@ -46,7 +50,8 @@
     box-sizing: border-box;
 }
 
-.form-row input::placeholder {
+.form-row input::placeholder,
+.form-row select {
     color: #00254E;
 }
 
@@ -69,7 +74,8 @@
 }
 
 .form-row input:focus,
-.contact-group input:focus {
+.contact-group input:focus,
+.form-row select:focus {
     border: 2px solid #F1642E;
     outline: none;
 }

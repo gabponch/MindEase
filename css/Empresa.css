@@ -1,0 +1,272 @@
+body {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #364C84;
+}
+
+header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      color: #364C84
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav .menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin-left: auto;
+  
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: #364C84;
+  }
+
+  /* Conteúdo Principal */
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Estilo dos Cards */
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .card.selected {
+    border: 2px solid #007BFF;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .card-price,
+  .card-details {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .card-price strong,
+  .card-details strong {
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .btn.basic {
+    background-color: #0056b3;
+  }
+  
+  .btn.intermediate {
+    background-color: #28a745;
+  }
+  
+  .btn.prime {
+    background-color: #ffc107;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Tela Lista Funcionários */
+.employees-page .employee-list {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+  }
+  
+  .employees-page .employee-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .employees-page .employee-card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .employees-page .employee-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .employees-page .employee-info {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .employees-page .employee-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .employees-page .last-session {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .employees-page .doctor-name {
+    font-size: 0.9rem;
+    color: #999;
+    white-space: nowrap;
+  }
+  
+  /* -------------------- */
+/* Tela Meu Perfil */
+/* -------------------- */
+
+.profile-page .profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.profile-page .company-logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+.profile-page .company-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1e293b;
+  margin: 0;
+}
+
+.profile-page .company-alias {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-top: 5px;
+}
+
+/* Detalhes do Perfil */
+.profile-page .profile-details {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-page .detail-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.profile-page .detail-card:last-child {
+  margin-bottom: 0;
+}
+
+.profile-page .detail-title {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.profile-page .detail-info {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #364C84;
+    transition: color 0.3s ease; /* Suaviza a transição */
+  }
+  
+  nav ul li a:hover {
+    color: #F1642E; /* Cor ao passar o mouse */
+  }

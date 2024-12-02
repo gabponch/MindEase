@@ -32,6 +32,12 @@
     gap: 20px;
 }
 
+.empresa-form a{
+    text-align: center;
+    background-color: #F1642E;
+    border-radius: 8px;
+}
+
 .form-row {
     font-weight: bold;
     display: flex;
@@ -87,61 +93,4 @@
     border-radius: 8px;
     font-size: 18px;
     box-sizing: border-box;
-}
-
-main{
-    position: relative;
-}
-
-/* Ajuste geral das nuvens */
-.nuvem1,
-.nuvem2 {
-    position: absolute;
-    width: 5vw; /* Tamanho relativo à largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-    z-index: -1;
-}
-
-/* Posicionamento inicial */
-.nuvem1 {
-    left: 90vw; /* Proporcional à largura da tela */
-    bottom: 10vh; /* Proporcional à altura da tela */
-}
-
-.nuvem2 {
-    left: 20vw; /* Proporcional à largura da tela */
-    bottom: 30vh; /* Proporcional à altura da tela */
-}
-
-/* Responsividade */
-@media screen and (max-width: 1200px) {
-    .nuvem1, .nuvem2 {
-        width: 15vw; /* Aumenta o tamanho em telas menores */
-    }
-
-    .nuvem1 {
-        left: 70vw;
-        bottom: 15vh;
-    }
-
-    .nuvem2 {
-        left: 10vw;
-        bottom: 25vh;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .nuvem1, .nuvem2 {
-        width: 20vw; /* Ajuste maior para telas bem pequenas */
-    }
-
-    .nuvem1 {
-        left: 50vw;
-        bottom: 20vh;
-    }
-
-    .nuvem2 {
-        left: 5vw;
-        bottom: 15vh;
-    }
 }

@@ -1,0 +1,110 @@
+/* Estrutura Geral */
+.interface {
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Menu */
+.menu {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu nav ul li a.active {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Calendário */
+.calendario {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mes-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mes-titulo h2 {
+    margin: 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.btn-mes {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-mes:hover {
+    background-color: #0056b3;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.dia, .dia-mes {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    background-color: #e9ecef;
+}
+
+.dia {
+    font-weight: bold;
+}
+
+.dia-mes {
+    background-color: #fff;
+    color: #333;
+}
+
+.dia-mes.verde {
+    background-color: #4caf50;
+    color: white;
+}
+
+.dia-mes.vermelho {
+    background-color: #f44336;
+    color: white;
+}
+
+.dia-mes.amarelo {
+    background-color: #ffc107;
+    color: white;
+}

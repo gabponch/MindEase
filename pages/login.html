@@ -28,9 +28,9 @@
                 <h1>Insira seu E-mail</h1>
                 <p>É o mesmo que você usou pra cadastrar no MindEase.</p>
             </div>
-            <form action="processar-login.php" method="POST" class="login-form">
+            <form id="login-form" class="login-form">
                 <div class="form-row">
-                    <input type="email" name="email" placeholder="E-mail*" required>
+                    <input type="email" id="email" name="email" placeholder="E-mail*" required>
                 </div>
                 <div class="form-row">
                     <input type="password" name="senha" placeholder="Senha*" required>
@@ -39,6 +39,26 @@
             </form>
         </section>
     </main>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio do formulário para implementar o redirecionamento
+
+            var email = document.getElementById('email').value; // Captura o e-mail inserido pelo usuário
+            var domain = email.split('@')[1]; // Obtém o domínio do e-mail
+
+            // Lógica de redirecionamento com base no domínio do e-mail
+            if (domain === 'unit.org.br') {
+                window.location.href = 'gerenciarplanos.html'; // Redireciona para gerenciarplanos.html
+            } else if (domain === 'souunit.org.br') {
+                window.location.href = 'telaFuncionario.html'; // Redireciona para telaFuncionario.html
+            } else if (domain === 'gmail.com') {
+                window.location.href = 'calendario.html'; // Redireciona para calendario.html
+            } else {
+                alert('Domínio de e-mail inválido!'); // Caso o domínio não seja reconhecido
+            }
+        });
+    </script>
 
     <script src="../js/script.js"></script>
 </body>

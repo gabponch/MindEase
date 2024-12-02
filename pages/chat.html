@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Janela de Chat</title>
+  <link rel="stylesheet" href="../css/funcionarioo.css">
+  <link rel="stylesheet" href="../css/funcionario.css">
+</head>
+<header>
+  <nav>
+      <div class="logo"> <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
+      <a href="./home.html"><span>MindEase</span></a>
+  </div>
+      <div class="menu-container">
+          <ul>
+              <li><a href="./telafuncionario.html" class="nav-link"><b>Encontre Seu Psicólogo</b></a></li>
+              <li><a href="./consultas.html" class="nav-link"><b>Consultas</b></a></li>
+              <li><a href="./chat-conversas.html" class="nav-link"><b>Chat</b></a></li>
+          </ul>
+      </div>
+  </nav>
+</header>
+
+<body>
+  <section class="chat-window">
+    <header class="chat-header">
+      <img src="https://via.placeholder.com/50" alt="Dr. Henrique" class="profile-img">
+      <div>
+        <h3 id="chat-name">Dr. Henrique</h3>
+        <p id="chat-status">Online há 1h</p>
+      </div>
+    </header>
+    <div class="chat-messages" id="chat-messages">
+      <div class="message received">Olá! Nossa consulta pode ser amanhã às 12h</div>
+    </div>
+    <footer class="chat-footer">
+      <input type="text" id="chat-input" placeholder="Digite...">
+      <button onclick="sendMessage()">➤</button>
+    </footer>
+  </section>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("chat-input");
+      const message = input.value.trim();
+      if (message) {
+        const chatMessages = document.getElementById("chat-messages");
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", "sent");
+        messageElement.textContent = message;
+        chatMessages.appendChild(messageElement);
+        input.value = "";
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+    }
+  </script>
+</body>
+</html>

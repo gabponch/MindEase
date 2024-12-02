@@ -1,0 +1,247 @@
+body {
+  font-family: 'Jost', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #364C84;
+}
+
+header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      color: #364C84
+  }
+
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav .menu-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin-left: auto;
+  
+  }
+
+  nav ul li a {
+      text-decoration: none;
+      color: #364C84;
+  }
+  
+  .search-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .filters select,
+  .filters button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .profile-card {
+    background-color: #ffffff;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+  }
+  
+  .tags span {
+    display: inline-block;
+    background-color: #d6f8d6;
+    color: #4caf50;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 5px 0 0;
+  }
+  
+  .crp {
+    margin-left: auto;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .profile-content {
+    margin-top: 20px;
+  }
+  
+  .about {
+    margin: 10px 0;
+  }
+  
+  .view-profile {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact p {
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  .consultations-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .consultations-container h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .consultation-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .consultation-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .profile-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .data {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .status {
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 90px;
+    text-transform: uppercase;
+  }
+  
+  .status.scheduled {
+    background-color: #d9d9d9;
+    color: #333;
+  }
+  
+  .status.completed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status.canceled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #364C84;
+    transition: color 0.3s ease; /* Suaviza a transição */
+  }
+  
+  nav ul li a:hover {
+    color: #F1642E; /* Cor ao passar o mouse */
+  }
+  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="../css/psicologo.css">
+</head>
+<body>
+    <div class="interface">
+        <header class="menu">
+            <h1>Interface Psicólogo - Cronogramas</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Pacientes</a></li>
+                    <li><a href="#" class="active">Cronogramas</a></li>
+                    <li><a href="#">Histórico de consultas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="calendario">
+            <div class="mes-titulo">
+                <button class="btn-mes" id="btn-anterior">&lt;</button>
+                <h2 id="mes-ano">Novembro 2024</h2>
+                <button class="btn-mes" id="btn-proximo">&gt;</button>
+            </div>
+            <div class="grade" id="grade-calendario">
+                <!-- Cabeçalho dos dias da semana -->
+                <div class="dia">Dom</div>
+                <div class="dia">Seg</div>
+                <div class="dia">Ter</div>
+                <div class="dia">Qua</div>
+                <div class="dia">Qui</div>
+                <div class="dia">Sex</div>
+                <div class="dia">Sab</div>
+                <!-- Dias do calendário (gerados dinamicamente) -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

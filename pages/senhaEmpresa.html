@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindEase</title>
+    <link rel="stylesheet" href="../css/senha.css">
+    <link rel="icon" href="../assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
+                <a href="./home.html"><span>MindEase</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="Criar-senha">
+            <h1>Vamos Criar uma senha</h1>
+        </section>
+
+        <section id="empresa-login" class="login-section">
+            <form action="processar-cadastro.php" method="POST" class="empresa-form">
+                <div class="form-row">
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    <span class="eye-icon">👁</span>
+                </div>
+                <div class="form-row">
+                    <input type="password" id="confirmar-senha" name="confirmar_senha" placeholder="Confirme sua senha" required>
+                    <span class="eye-icon">👁</span>
+                </div>
+                <a href="./gerenciarplanos.html"><button type="submit" class="submit-button">Cadastrar Empresa</button></a>
+            </form>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

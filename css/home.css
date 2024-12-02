@@ -26,161 +26,170 @@ a {
 }
 
 header {
-        background-color: #fff;
-        padding: 10px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid #ddd;
-        color: #364C84
-    }
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    color: #364C84
+}
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-    nav .menu-container {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
-    }
+nav .menu-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
 
-    nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-        padding: 0;
-        margin-left: auto;
-    }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: auto;
+}
 
-    nav ul li a {
-        text-decoration: none;
-        color: #364C84;
-    }
+nav ul li a {
+    text-decoration: none;
+    color: #364C84;
+}
 
-    .auth-buttons {
-        display: flex;
-        gap: 10px;
-        margin-left: 20px;
-    }
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
 
-    .auth-buttons .login,
-    .auth-buttons .start {
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 25px;
-    }
+.auth-buttons .login,
+.auth-buttons .start {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
 
-    .auth-buttons .login {
-        background-color: #fff;
-        color: #364C84;
-        border: 1px solid #F1642E;
-     
-    }
+.auth-buttons .login {
+    background-color: #fff;
+    color: #364C84;
+    border: 1px solid #F1642E;
 
-    .auth-buttons .start {
-        background-color: #F1642E;
-        color: #fff;
-    }
+}
 
-    .destaque {
-        background-color: #E1EBAD;
-        text-align: center;
-        padding: 50px 20px;
-        color: #364C84;
-        /* clip-path: polygon() pra dar forma ao destaque*/
-        }
+.auth-buttons .start {
+    background-color: #F1642E;
+    color: #fff;
+}
 
-    .info {
-        text-align: center;
-        padding: 50px 20px;
-        color: #364C84;
-    }
+.destaque {
+    background-color: #E1EBAD;
+    text-align: center;
+    padding: 50px 20px;
+    color: #364C84;
+    clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .plan-button {
-        background-color: #F1642E;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 25px;
-    }
 
-    .about-us {
-        color: #364C84;
-    }
 
-    .about-us h2 {
-        color: #F1642E;
-    }
+.info {
+    text-align: center;
+    padding: 50px 20px;
+    color: #364C84;
+}
 
-    .about-us,
-    .how-it-works,
-    .advantages,
-    .for-psychologists {
-        padding: 50px 20px;
-        text-align: rigth;
-    }
+.plan-button {
+    background-color: #F1642E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
 
-    .how-it-works {
-        background-color: #E1EBAD;
-    }
+.about-us {
+    color: #364C84;
+}
 
-    .how-it-works h2 {
-        color: #F1642E;
-    }
+.about-us h2 {
+    color: #F1642E;
+}
 
-    .how-it-works ol,
-    .advantages ul,
-    .psychologist-advantages ul {
-        text-align: left;
-        display: inline-block;
-        margin: 0 auto;
-        padding-left: 20px;
-        color: #364C84;
-    }
+.about-us,
+.how-it-works,
+.advantages,
+.for-psychologists {
+    padding: 50px 20px;
+    text-align: rigth;
+}
 
-    .advantages h2 {
-        color: #F1642E;
-    }
+.how-it-works {
+    background-color: #E1EBAD;
+}
 
-    .how-it-works li,
-    .advantages li,
-    .psychologist-advantages li {
-        margin-bottom: 10px;
-    }
+.how-it-works h2 {
+    color: #F1642E;
+}
 
-    .for-psychologists h3 {
-        color: #364C84;
-    }
+.how-it-works ol,
+.advantages ul,
+.psychologist-advantages ul {
+    text-align: left;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 20px;
+    color: #364C84;
+}
 
-    .for-psychologists {
-        color: #364C84;
-    }
+.advantages h2 {
+    color: #F1642E;
+}
 
-    .company-benefits,
-    .company-advantages,
-    .psychologist-advantages {
-        margin: 20px 0;
-        color: #364C84;
-    }
-.company-benefits, .company-advantages h3{
+.how-it-works li,
+.advantages li,
+.psychologist-advantages li {
+    margin-bottom: 10px;
+}
+
+.for-psychologists h3 {
+    color: #364C84;
+}
+
+.for-psychologists {
+    color: #364C84;
+}
+
+.company-benefits,
+.company-advantages,
+.psychologist-advantages {
+    margin: 20px 0;
+    color: #364C84;
+}
+
+.company-benefits,
+.company-advantages h3 {
     text-align: right;
 }
 
-.company-benefits, .company-advantages {
+.company-benefits,
+.company-advantages {
     text-align: right;
 }
-    .hire-button {
-        background-color: #F1642E;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 25px;
-    }
+
+.hire-button {
+    background-color: #F1642E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}

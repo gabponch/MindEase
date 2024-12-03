@@ -1,0 +1,142 @@
+body {
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #364C84;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    color: #364C84;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav .menu-container {
+    display: flex;
+    justify-content: flex-end; /* Alinhamento ajustado para a direita */
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #364C84;
+}
+
+/* Adicionando estilo para o ícone de perfil */
+nav ul li a.perfil-icon img {
+    width: 26px;
+    height: 28px;
+}
+
+.profile-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-funcionario {
+    width: 120px;
+    height: 160px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.funcionario-name {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.empresa {
+    font-size: 18px;
+    color: #666;
+}
+
+.edit-profile-btn {
+    background-color: #F1642E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.detail-card {
+    flex: 1 1 calc(50% - 20px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #F4F4F4;
+    color: #00254E;
+}
+
+.detail-info {
+    font-size: 19px;
+    color: #364C84;
+}

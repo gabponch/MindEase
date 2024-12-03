@@ -62,6 +62,12 @@ nav ul li a {
     color: #364C84;
 }
 
+.destaque img{
+    max-width: 67vh;
+    border-radius: 20px;
+    
+}
+
 .auth-buttons {
     display: flex;
     gap: 10px;
@@ -89,14 +95,22 @@ nav ul li a {
 }
 
 .destaque {
-    background-color: #E1EBAD;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px 194px 20px 267px;
     color: #364C84;
-    clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%);
+    /* clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%); */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.8rem;
+}
+
+.banner {
+    position: absolute;
+    z-index: -1;
+    max-width: 250vh;
+    left: 0px;
+    top: -100px;
 }
 
 
@@ -105,6 +119,7 @@ nav ul li a {
     text-align: center;
     padding: 50px 20px;
     color: #364C84;
+    margin-top: 150px;
 }
 
 .plan-button {

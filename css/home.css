@@ -2,6 +2,7 @@ body {
     font-family: 'Jost', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 1.3rem;
 }
 
 a {
@@ -15,8 +16,8 @@ a {
 }
 
 .logo img {
-    width: 50px;
     height: auto;
+    width: 65px;
 }
 
 .logo span {
@@ -27,12 +28,12 @@ a {
 
 header {
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ddd;
-    color: #364C84
+    color: #364C84;
 }
 
 nav {
@@ -52,7 +53,7 @@ nav .menu-container {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     padding: 0;
     margin-left: auto;
 }
@@ -62,10 +63,9 @@ nav ul li a {
     color: #364C84;
 }
 
-.destaque img{
-    max-width: 67vh;
+.destaque img {
     border-radius: 20px;
-    
+    max-width: 80vh;
 }
 
 .auth-buttons {
@@ -74,61 +74,51 @@ nav ul li a {
     margin-left: 20px;
 }
 
-.auth-buttons .login,
-.auth-buttons .start {
-    padding: 10px 20px;
+.auth-buttons .login {
+    padding: 10px 36px;
     border: none;
     cursor: pointer;
     border-radius: 25px;
-}
-
-.auth-buttons .login {
+    font-size: 0.9rem;
     background-color: #fff;
     color: #364C84;
     border: 1px solid #F1642E;
-
 }
 
 .auth-buttons .start {
     background-color: #F1642E;
     color: #fff;
+    border-radius: 25px;
+    padding: 10px 36px;
 }
 
 .destaque {
+    padding: 30px 250px 30px 300px;
+    font-size: 2rem;
     text-align: center;
-    padding: 20px 194px 20px 267px;
     color: #364C84;
-    /* clip-path: polygon(0 1, 100% 0, 100% 60%, 0 100%, 1 85%); */
+    background-color: #E1EBAD;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.8rem;
 }
-
-.banner {
-    position: absolute;
-    z-index: -1;
-    max-width: 250vh;
-    left: 0px;
-    top: -100px;
-}
-
-
 
 .info {
     text-align: center;
     padding: 50px 20px;
     color: #364C84;
-    margin-top: 150px;
+    padding: 65px 30px;
+    margin-top: 110px;
 }
 
 .plan-button {
     background-color: #F1642E;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
     border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
 }
 
 .about-us {
@@ -143,8 +133,7 @@ nav ul li a {
 .how-it-works,
 .advantages,
 .for-psychologists {
-    padding: 50px 20px;
-    text-align: rigth;
+    padding: 65px 30px;
 }
 
 .how-it-works {
@@ -163,6 +152,7 @@ nav ul li a {
     margin: 0 auto;
     padding-left: 20px;
     color: #364C84;
+    font-size: 1.2rem;
 }
 
 .advantages h2 {
@@ -184,8 +174,8 @@ nav ul li a {
 }
 
 .company-benefits,
-.company-advantages,
-.psychologist-advantages {
+.company-advantages {
+    text-align: right;
     margin: 20px 0;
     color: #364C84;
 }
@@ -195,16 +185,231 @@ nav ul li a {
     text-align: right;
 }
 
-.company-benefits,
-.company-advantages {
-    text-align: right;
-}
-
 .hire-button {
     background-color: #F1642E;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     cursor: pointer;
+    border: 1px solid #F1642E;
     border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
 }
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 135px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.dropdown-content a {
+    color: #364C84;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown .start {
+    background-color: #F1642E;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 36px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #364C84;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links li {
+    text-align: center;
+}
+
+/* Ajustar o comportamento no responsivo */
+.hamburger-menu {
+    display: none; /* Oculta o ícone por padrão */
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #364C84;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Transformações para o "X" */
+.hamburger-menu.active .hamburger-icon div:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+}
+
+.hamburger-menu.active .hamburger-icon div:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .hamburger-icon div:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Mostra o ícone apenas em telas pequenas */
+    }
+
+    .menu-container {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: visibility 0.3s, opacity 0.3s ease;
+    }
+
+    .menu-container.active {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 12px;
+    }
+
+    .nav-links {
+        display: flex; /* Garante que as opções fiquem lado a lado */
+        flex-direction: row; /* Exibe as opções horizontalmente */
+        gap: 30px;
+        justify-content: center; /* Centraliza as opções horizontalmente */
+        padding: 0;
+        margin: 0;
+    }
+
+    .auth-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .destaque{
+        padding: 30px 150px;
+    }
+
+    .destaque h1{
+        font-size: 1.3rem;
+
+    }
+
+    .destaque img{
+        max-width: 50vh;
+    }
+
+    .info{
+        margin-top: 0px;
+        padding: 0 30px;
+    }
+    
+
+
+}
+
+
+
+@media (max-width: 300px) {
+    .menu-container {
+        display: none;
+    }
+}
+
+/* Efeito hover para as opções de menu */
+nav ul li a:hover {
+    color: #F1642E; /* Cor do texto ao passar o mouse */
+    border-radius: 5px; /* Arredondamento nas bordas */
+    padding: 1px 4px; /* Espaçamento interno ao passar o mouse */
+    transition: all 0.5s ease-in-out; /* Transição suave */
+}
+
+/* Efeito hover para o botão de Login */
+.auth-buttons .login:hover {
+    background-color: #F1642E; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+    padding: 12px 40px; /* Espaçamento interno ao passar o mouse */
+    transition: all 0.5s ease-in-out; /* Transição suave */
+    border: 1px solid #F1642E; /* Cor da borda */
+}
+
+/* Efeito hover para o botão Começar */
+.auth-buttons .start:hover {
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #F1642E; /* Cor do texto ao passar o mouse */
+    transition: all 0.5s ease-in-out; /* Transição suave */
+    border: 1px solid #F1642E; /* Cor da borda */
+}
+
+.hire-button:hover{
+    background-color: #fff; /* Cor de fundo ao passar o mouse */
+    color: #F1642E; /* Cor do texto ao passar o mouse */
+    transition: all 0.5s ease-in-out; /* Transição suave */
+    border: 1px solid #F1642E; /* Cor da borda */
+}
+
+
+

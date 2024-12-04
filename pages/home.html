@@ -16,37 +16,49 @@
 <body>
     <header>
         <nav>
-            <div class="logo"> <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
+            <div class="logo">
+                <a href="./home.html"><img src="../assets/logo.png" alt="MindEase"></a>
                 <a href="./home.html"><span>MindEase</span></a>
             </div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
             <div class="menu-container">
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#sobre-nos" class="nav-link"><b>Sobre nós</b></a></li>
                     <li><a href="#para-empresas" class="nav-link"><b>Para Empresas</b></a></li>
                     <li><a href="#para-psicologos" class="nav-link"><b>Para Psicólogos</b></a></li>
                 </ul>
                 <div class="auth-buttons">
-                    <a href="./login.html"><button class="login"><b>Login</b></a>
-                    <a href="./cadastro.html"><button class="start"><b>Começar</b></button></a>
+                    <a href="./login.html"><button class="login"><b>Login</b></button></a>
+                    <div class="dropdown">
+                        <button class="start"><b>Começar</b></button>
+                        <div class="dropdown-content">
+                            <a href="./cadPsicologo.html"><b>Para Psicólogos</b></a>
+                            <a href="./cadEmpresa.html"><b>Para empresas</b></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
+        
     </header>
 
     <main>
-        <img class="banner" src="../assets/banner.png" alt="">
         <section class="destaque">
+            <h1>Reduza o estresse.<br>Escolha </br>MindEase</h1>
             <img src="../assets/banner-home.jpg" alt="">
-            <h1>Reduza o estresse.<br>escolha </br>MindEase</h1>
-            <!-- <img src="../assets/banner-home.jpg" alt=""> -->
-                </div>
-            </div>
         </section>
         <section class="info">
             <h2>Tudo que a sua mente precisa.</h2>
             <p>O MindEase é um benefício destinado<br>exclusivamente a empresas.</p>
             <button class="plan-button">Encontre seu plano</button>
         </section>
+        
         <section id="sobre-nos" class="about-us">
             <h2>Sobre nós</h2>
             <p>Na MindEase, acreditamos que o bem-estar mental é a chave para um ambiente de<br>trabalho produtivo e
@@ -59,15 +71,13 @@
             <h2>Como Funciona</h2>
             <ol>
                 <li><strong>Cadastro da Empresa</strong> <br>A empresa monta o pacote de benefícios ideal e paga um
-                    valor
-                    mensal baseado no <br>número total de colaboradores para oferecer os benefícios.</li>
+                    valor mensal baseado no número total de colaboradores para oferecer os benefícios.</li>
                 <li><strong>Cadastro dos Psicólogos</strong> <br>Profissionais qualificados podem se registrar em nossa
-                    plataforma para oferecer seus <br>serviços.</li>
+                    plataforma para oferecer seus serviços.</li>
                 <li><strong>Conexão Perfeita</strong> <br>Após o cadastro, conectamos os funcionários da empresa com
-                    psicólogos<br> qualificados para sessões de terapia online.</li>
+                    psicólogos qualificados para sessões de terapia online.</li>
                 <li><strong>Acesso a Recursos Exclusivos</strong> <br>Além das terapias, oferecemos ebooks com dicas
-                    práticas de bem-estar e workshops<br>interativos para melhorar a saúde mental no ambiente de
-                    trabalho.
+                    práticas de bem-estar e workshops interativos para melhorar a saúde mental no ambiente de trabalho.
                 </li>
                 <li><strong>Gestão Facilitada</strong> Acompanhe relatórios e resultados diretamente pelo painel da
                     empresa.</li>
@@ -85,8 +95,7 @@
             <div id="para-empresas" class="company-benefits">
                 <h3>Para empresas</h3>
                 <p>A empresa monta o pacote de benefícios ideal<br> e paga um valor mensal baseado no número<br> total
-                    de
-                    colaboradores para oferecer os<br>benefícios.</p>
+                    de colaboradores para oferecer os benefícios.</p>
                 <a href="./cadEmpresa.html"><button class="hire-button">Contrate para sua empresa</button></a>
             </div>
             <div class="company-advantages">
@@ -102,8 +111,7 @@
         <section id="para-psicologos" class="for-psychologists">
             <h3>Para Psicólogos</h3>
             <p>Se você é psicólogo e busca expandir sua atuação de<br> forma prática e flexível, a MindEase é a
-                plataforma<br>
-                ideal para conectar você a empresas que valorizam a<br> saúde mental de seus colaboradores.</p>
+                plataforma ideal para conectar você a empresas que valorizam a saúde mental de seus colaboradores.</p>
             <a href="./cadPsicologo.html"><button class="hire-button">Cadastre-se para ser Psicólogo</button></a>
             <div class="psychologist-advantages">
                 <h3>Vantagens para Psicólogos</h3>
@@ -118,6 +126,22 @@
         </section>
     </main>
     <script src="../js/script.js"></script>
+
+    </main>
+
+    <script>
+// Selecionar o ícone do hambúrguer e o menu
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuContainer = document.querySelector('.menu-container');
+
+// Adicionar um evento de clique no hambúrguer para alternar a classe active
+hamburgerMenu.addEventListener('click', function() {
+    hamburgerMenu.classList.toggle('active');  // Alterna a classe 'active' no ícone
+    menuContainer.classList.toggle('active');  // Alterna a classe 'active' no menu
+});
+
+
+    </script>
 </body>
 
 </html>
